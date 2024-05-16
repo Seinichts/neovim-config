@@ -4,12 +4,6 @@ local t = ls.text_node
 local tex = require("util.latex")
 
 return {
-  -- s({ trig = "T ", snippetType = "autosnippet", wordTrig = false }, {
-  --   t("$T$"),
-  -- }),
-  -- s({ trig = "V ", snippetType = "autosnippet", wordTrig = false }, {
-  --   t("$V$"),
-  -- }),
   s({ trig = "alp", snippetType = "autosnippet", wordTrig = false }, {
     t("\\alpha"),
   }, { condition = tex.in_mathzone }),
