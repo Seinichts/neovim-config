@@ -396,6 +396,13 @@ return {
     { condition = tex.in_mathzone }
   ),
   s(
+    { trig = "abs", wordTrig = false, snippetType = "autosnippet", priority = 2000 },
+    fmta("\\abs{<>}", {
+      i(1),
+    }),
+    { condition = tex.in_mathzone }
+  ),
+  s(
     { trig = "deg", wordTrig = false, snippetType = "autosnippet", priority = 2000 },
     fmta("\\degree", {}),
     { condition = tex.in_mathzone }

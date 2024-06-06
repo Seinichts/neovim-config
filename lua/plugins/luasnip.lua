@@ -33,7 +33,7 @@ return {
   keys = function()
     return {
       {
-        "fj",
+        "<tab>",
         function()
           return require("luasnip").expand_or_locally_jumpable() and "<Plug>luasnip-jump-next"
           -- or "<c-\\><c-n>:call searchpair('[([{<|]', '', '[)\\]}>|]', 'W')<cr>a"
@@ -43,14 +43,14 @@ return {
         mode = "i",
       },
       {
-        "fj",
+        "<tab>",
         function()
           return require("luasnip").jump(1)
         end,
         mode = "s",
       },
       {
-        "fk",
+        "<s-tab>",
         function()
           require("luasnip").jump(-1)
         end,
