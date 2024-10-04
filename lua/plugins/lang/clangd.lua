@@ -16,9 +16,16 @@ return {
             "--all-scopes-completion",
             "--header-insertion=iwyu",
             "--compile-commands-dir=build",
+            "--query-driver=/usr/bin/clang,/usr/bin/clang++",
+            "--fallback-style=llvm",
           },
         },
       },
     },
+  },
+  {
+    "Civitasv/cmake-tools.nvim",
+    lazy = true,
+    ft = { "c", "cpp" },
   },
 }
