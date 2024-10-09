@@ -7,5 +7,5 @@ local map = LazyVim.safe_keymap_set
 map({ "i" }, "jk", "<Esc>")
 
 -- movement
--- map({ "n", "v", "o" }, "H", "^", { desc = "Use 'H' as '^'" })
--- map({ "n", "v", "o" }, "L", "$", { desc = "Use 'L' as '$'" })
+map({ "n", "v", "o" }, "H", "^", { desc = "Use 'H' as '^'" })
+map({ "n", "v", "o" }, "L", "$", { desc = "Use 'L' as '$'" })
