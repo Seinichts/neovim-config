@@ -16,12 +16,16 @@ return {
       variant = "dawn",
     },
   },
+  {
+    "loctvl842/monokai-pro.nvim",
+    name = "monokai-pro",
+  },
 
   -- somewhere in your config:
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "monokai-pro-default",
     },
   },
 }

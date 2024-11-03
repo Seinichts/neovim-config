@@ -17,9 +17,16 @@ vim.opt.tabstop = indent -- Number of spaces tabs count for
 vim.opt.shiftwidth = indent -- Size of an indent
 
 if vim.g.neovide then
-  vim.o.guifont = "Cascadia Code NF:h16"
-  vim.opt.linespace = 3
+  vim.o.guifont = "JetbrainsMono Nerd Font:h16"
+  vim.g.neovide_scale_factor = 1.0
+  vim.g.neovide_floating_corner_radius = 20.0
+  vim.g.neovide_line_height = 1.5
   vim.g.transparency = 1
-  vim.g.neovide_transparency = 0.9
-  -- vim.g.neovide_background_color = "#0f1117"
+  -- vim.g.neovide_transparency = 0.9
+  -- Allow clipboard copy paste in neovim
+  vim.g.neovide_input_use_logo = 1
+  vim.api.nvim_set_keymap("", "<D-v>", "+p<CR>", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("!", "<D-v>", "<C-R>+", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("t", "<D-v>", "<C-R>+", { noremap = true, silent = true })
+  vim.api.nvim_set_keymap("v", "<D-v>", "<C-R>+", { noremap = true, silent = true })
 end
