@@ -18,3 +18,4 @@ return {
   ),
   s("choicenode", c(1, { t("choice 1"), t("choice 2"), t("choice 3") })),
 }
+-- test
