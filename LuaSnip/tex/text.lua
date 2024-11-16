@@ -20,9 +20,9 @@ return {
   s({ trig = "dps", snippetType = "autosnippet" }, {
     t("\\displaystyle"),
   }, { condition = tex.in_mathzone }),
-  s({ trig = "if", snippetType = "autosnippet" }, {
-    t("\\text{\\ if\\ }"),
-  }, { condition = tex.in_mathzone }),
+  -- s({ trig = "if", snippetType = "autosnippet" }, {
+  --   t("\\text{\\ if\\ }"),
+  -- }, { condition = tex.in_mathzone }),
   s({ trig = "stt", snippetType = "autosnippet" }, {
     t("\\quad\\text{s.t.}\\quad"),
   }, { condition = tex.in_mathzone }),

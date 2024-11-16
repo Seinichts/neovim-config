@@ -172,7 +172,7 @@ return {
     { trig = "beg", snippetType = "autosnippet" },
     fmta(
       [[
-      \begin{<>}[<>]
+      \begin{<>}<>
         <>
       \end{<>}
       ]],

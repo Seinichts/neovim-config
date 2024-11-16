@@ -1,0 +1,28 @@
+return {
+  -- {
+  --   "zbirenbaum/copilot.lua",
+  --   keys = {
+  --     { "<leader>at", "<cmd>Copilot toggle<CR>", desc = "Toggle Copilot" },
+  --   },
+  --   event = "InsertEnter",
+  --   opts = {
+  --     suggestion = {
+  --       enabled = true,
+  --       auto_trigger = false,
+  --       keymap = {
+  --         accept = "<F2>",
+  --         next = "<D-]>",
+  --         prev = "<D-[>",
+  --       }
+  --     },
+  --   },
+  -- },
+  -- {
+  --   "zbirenbaum/copilot-cmp",
+  --   enabled = false,
+  -- },
+  -- {
+  --   "saghen/blink.cmp",
+  --   enabled = false,
+  -- }
+}

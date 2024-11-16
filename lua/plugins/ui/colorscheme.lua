@@ -5,8 +5,8 @@ return {
     name = "catppuccin",
     priority = 1000,
     opts = {
-      flavour = "latte",
-      -- transparent_background = false,
+      flavour = "mocha",
+      transparent_background = true,
     },
   },
   {
@@ -19,13 +19,16 @@ return {
   {
     "loctvl842/monokai-pro.nvim",
     name = "monokai-pro",
+    opts = {
+      -- transparent_background = true,
+    }
   },
 
   -- somewhere in your config:
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "monokai-pro-default",
+      colorscheme = "catppuccin",
     },
   },
 }

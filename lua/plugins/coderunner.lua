@@ -5,8 +5,8 @@ return {
     dependencies = { "nvim-lua/plenary.nvim" },
     keys = {
       { "<leader>rr", "<cmd>RunCode<cr>", desc = "Run Code" },
-      { "<leader>rf", "<cmd>RunFile<cr>", desc = "Run File" },
-      { "<leader>rp", "<cmd>RunProject<cr>", desc = "Run Project" },
+      -- { "<leader>rf", "<cmd>RunFile<cr>", desc = "Run File" },
+      -- { "<leader>rp", "<cmd>RunProject<cr>", desc = "Run Project" },
       { "<leader>rd", "<cmd>RunClose<cr>", desc = "Run Close" },
     },
     opts = {

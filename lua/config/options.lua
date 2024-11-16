@@ -8,6 +8,7 @@ vim.opt.spelllang = { "en", "cjk" }
 vim.opt.spelloptions = "camel"
 vim.opt.backup = false
 vim.g.maplocalleader = "\\"
+vim.g.autoformat = false
 
 vim.g.node_host_prog = "/opt/homebrew/bin/neovim-node-host"
 local indent = 2
@@ -21,7 +22,7 @@ if vim.g.neovide then
   vim.g.neovide_scale_factor = 1.0
   vim.g.neovide_floating_corner_radius = 20.0
   vim.g.neovide_line_height = 1.5
-  vim.g.transparency = 1
+  -- vim.g.transparency = 0.8
   -- vim.g.neovide_transparency = 0.9
   -- Allow clipboard copy paste in neovim
   vim.g.neovide_input_use_logo = 1
