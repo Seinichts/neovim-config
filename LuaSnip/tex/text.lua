@@ -51,7 +51,7 @@ return {
   s(
     { trig = "setc", snippetType = "autosnippet" },
     fmta("\\setcounter{<>}{<>}", {
-      c(1, { t("exercise"), t("theorem") }),
+      c(1, { t("exer"), t("theorem") }),
       i(2),
     }),
     { condition = tex.in_text }

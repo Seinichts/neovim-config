@@ -19,7 +19,7 @@ return {
   -- },
   -- {
   --   "zbirenbaum/copilot-cmp",
-  --   enabled = false,
+  --   -- enabled = false,
   -- },
   -- {
   --   "saghen/blink.cmp",

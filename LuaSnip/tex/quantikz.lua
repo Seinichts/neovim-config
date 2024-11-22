@@ -298,3 +298,4 @@ return {
     t("\\Omega"),
   }, { condition = tex.in_quantikz }),
 }
+

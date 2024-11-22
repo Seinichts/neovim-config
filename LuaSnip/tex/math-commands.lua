@@ -110,6 +110,15 @@ return {
     }),
     { condition = tex.in_mathzone }
   ),
+  s(
+    { trig = "(%w)cal", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+    fmta("\\mathcal{<>}", {
+      f(function(_, snip)
+        return string.upper(snip.captures[1])
+      end),
+    }),
+    { condition = tex.in_mathzone }
+  ),
   s({ trig = "exp", snippetType = "autosnippet" }, {
     t("\\exp"),
   }, { condition = tex.in_mathzone }),
@@ -251,10 +260,10 @@ return {
     }),
     { condition = tex.in_mathzone }
   ),
-  -- s({ trig = "rr", snippetType = "autosnippet" }, fmta("\\ran", {}), { condition = tex.in_mathzone }),
-  -- s({ trig = "kk", snippetType = "autosnippet" }, fmta("\\ker", {}), { condition = tex.in_mathzone }),
+  s({ trig = "rr", snippetType = "autosnippet" }, fmta("\\Range", {}), { condition = tex.in_mathzone }),
+  s({ trig = "kk", snippetType = "autosnippet" }, fmta("\\ker", {}), { condition = tex.in_mathzone }),
   s({ trig = "tr", snippetType = "autosnippet" }, fmta("\\tr", {}), { condition = tex.in_mathzone }),
-  s({ trig = "span", snippetType = "autosnippet" }, fmta("\\span", {}), { condition = tex.in_mathzone }),
+  s({ trig = "span", snippetType = "autosnippet" }, fmta("\\Span", {}), { condition = tex.in_mathzone }),
   s({ trig = "aut", snippetType = "autosnippet" }, fmta("\\Aut", {}), { condition = tex.in_mathzone }),
   s({ trig = "gal", snippetType = "autosnippet" }, fmta("\\Gal", {}), { condition = tex.in_mathzone }),
   s({ trig = "rank", snippetType = "autosnippet" }, fmta("\\rank", {}), { condition = tex.in_mathzone }),

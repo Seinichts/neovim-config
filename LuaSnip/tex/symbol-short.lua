@@ -168,6 +168,9 @@ return {
   s({ trig = "=>", wordTrig = false, snippetType = "autosnippet" }, {
     t("\\implies"),
   }, { condition = tex.in_mathzone }),
+  s({ trig = "=<", wordTrig = false, snippetType = "autosnippet" }, {
+    t("\\impliedby"),
+  }, { condition = tex.in_mathzone }),
   s({ trig = "llr", wordTrig = false, snippetType = "autosnippet" }, {
     t("\\longleftrightarrow"),
   }, { condition = tex.in_mathzone }),
